@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name         OctoMate - Remove Size
+@version      0.0.1
+@description  .
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/One-Offs
+@supportURL   https://github.com/StylusThemes/One-Offs/issues
+@updateURL    https://raw.githubusercontent.com/StylusThemes/One-Offs/master/OctoMate-Remove-Size/style.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+@-moz-document domain("github.com") {
+[class="github-mate-size"] {
+  display: none;
+}
+
+[data-url$="recently_touched_branches_list"] {
+  display: none !important;
+}
+}

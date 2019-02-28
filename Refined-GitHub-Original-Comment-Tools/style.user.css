@@ -1,0 +1,38 @@
+/* ==UserStyle==
+@name         Refined GitHub - Original Comment Tools
+@version      0.0.1
+@description  .
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/One-Offs
+@supportURL   https://github.com/StylusThemes/One-Offs/issues
+@updateURL    https://raw.githubusercontent.com/StylusThemes/One-Offs/master/Refined-GitHub-Original-Comment-Tools/style.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+@-moz-document domain("github.com") {
+body .write-content .drag-and-drop {
+    display: block !important;
+  }
+  body .toolbar-group {
+    display: inline-block !important;
+    margin-left: 20px !important;
+  }
+  body .toolbar-group .toolbar-item {
+    display: block !important;
+  }
+  body .toolbar-group .refined-github-upload-btn {
+    display: none !important;
+  }
+  body .upload-enabled textarea {
+    border-bottom-style: dashed !important;
+    border-bottom-color: #444 !important;
+  }
+  body .upload-enabled textarea:focus {
+    border-bottom-style: dashed !important;
+    border-bottom-color: #2188FF !important;
+  }
+  body .comment-form-textarea {
+    min-height: 100px !important;
+  }
+}
