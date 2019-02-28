@@ -8,8 +8,13 @@
 @supportURL   https://github.com/StylusThemes/One-Offs/issues
 @updateURL    https://raw.githubusercontent.com/StylusThemes/One-Offs/master/ASF/style.user.css
 @license      CC-BY-SA-4.0
+
+@advanced text PORT "Port Number" "1242"
+@advanced text URL "Custom URL" "http://example.com/"
 ==/UserStyle== */
 
+@-moz-document regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
 html {
   font-size: 12px !important;
+}
 }
