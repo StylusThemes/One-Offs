@@ -1,0 +1,40 @@
+/* ==UserStyle==
+@name         Flagbrew Dark
+@version      0.0.1
+@description  Quick and dirty to make things dark
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/One-Offs
+@supportURL   https://github.com/StylusThemes/One-Offs/issues
+@updateURL    https://raw.githubusercontent.com/StylusThemes/One-Offs/master/Flagbrew/style.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+@-moz-document domain("flagbrew.org") {
+.modal-body,
+.modal-footer,
+.modal-header {
+  background-color: #171717;
+  border-top: none;
+  border-bottom: none;
+}
+
+Body {
+  background-image: url();
+  background-color: #171717;
+  color: #708090;
+}
+
+.jumbotron {
+  background-color: #1f1f1f;
+  color: #708090;
+}
+
+.figure-caption {
+  color: #708090;
+}
+
+pre code {
+  color: #228b22;
+}
+}
