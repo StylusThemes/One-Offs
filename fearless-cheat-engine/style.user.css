@@ -1,0 +1,17 @@
+/* ==UserStyle==
+@name         fearlessrevolution spoiler background fix
+@version      0.0.1
+@description  .
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/One-Offs
+@supportURL   https://github.com/StylusThemes/One-Offs/issues
+@updateURL    https://raw.githubusercontent.com/StylusThemes/One-Offs/master/fearless-cheat-engine/style.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+@-moz-document domain("fearlessrevolution.com") {
+.spoiler-shown .spoiler-body {
+  background-color: black !important;
+}
+}
