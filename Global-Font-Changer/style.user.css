@@ -33,6 +33,6 @@ FontTE "Replace Every Font" <<<EOT
 
 @advanced text FONTC "Custom Font URL" "https://example.com/"
 ==/UserStyle== */
-@-moz-document regexp("$(https?|chrome)://(?!fonts.google.com)[a-z0-9_].*$"), url-prefix("ftp://"), url-prefix("about"), url-prefix("javascript") {
+@-moz-document regexp("(https?|chrome)://(?!fonts.google.com)[a-z0-9_].*"), url-prefix("ftp://"), url-prefix("about"), url-prefix("javascript") {
 /*[[FontT]]*/
 }
