@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         OctoMate - Remove Size
-@version      0.0.2
+@version      0.0.3
 @description  .
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -17,9 +17,5 @@
 
 [data-url$="recently_touched_branches_list"] {
   display: none !important;
-}
-
-[class*="reponav-item"] {
-  border: none !important;
 }
 }
