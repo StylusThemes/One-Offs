@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Global Font Changer
-@version      0.0.4
+@version      0.0.5
 @description  Replace font for various things
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -37,7 +37,7 @@ FontTE "Replace Every Font" <<<EOT
 /*[[FontT]]*/
 }
 
-@-moz-document regexp("http(s)?://(www.)?true(steam)?(trophies|achievements).com/.*") {
+@-moz-document regexp("http(s)?://(www.)?true(steam)?(trophies|achievements).com/.*"), domain("www.twitch.tv") {
 * {
   font-size: 12px !important;
 }
