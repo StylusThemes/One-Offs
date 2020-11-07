@@ -1,0 +1,53 @@
+/* ==UserStyle==
+@name         Sonarr and Radarr Calendar Cell Fill
+@version      0.0.1
+@description  Fills Sonarr and Radarrs calender cells instead of it just being a line on the side.
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/One-Offs
+@supportURL   https://github.com/StylusThemes/One-Offs/issues
+@updateURL    https://raw.githubusercontent.com/StylusThemes/One-Offs/master/Sonarr-Radarr-Calendar-Cells/style.user.css
+@license      CC-BY-SA-4.0
+
+@advanced text SPORT "Sonarr Port Number" "8989"
+@advanced text SURL "Sonarr Custom URL" "http://example.com/"
+@advanced text RPORT "Radarr Port Number" "7878"
+@advanced text RURL "Radarr Custom URL" "http://example.com/"
+==/UserStyle== */
+
+@-moz-document regexp("https?://.*:/*[[SPORT]]*//.*"), regexp("/*[[SURL]]*/.*"), regexp("https?://.*:/*[[RPORT]]*//.*"), regexp("/*[[RURL]]*/.*") {
+.CalendarEvent\/downloaded\/2vSrJ, /* Sonarr */
+.CalendarEvent-downloaded-2vSrJ { /* Radarr */
+  border-left-color: rgba(39, 194, 76, .0) !important;
+  background: rgba(39, 194, 76, .7) !important;
+}
+
+.CalendarEvent\/missing\/1y6vZ, /* Sonarr */
+.CalendarEvent-missing-1y6vZ { /* Radarr */
+  border-left-color: rgba(240, 80, 80, .0) !important;
+  background: rgba(240, 80, 80, .7) !important;
+}
+
+.CalendarEvent\/unaired\/3aHdN, /* Sonarr */
+.CalendarEvent-unreleased-mSAoI { /* Radarr */
+  border-left-color: rgba(93, 156, 236, .0) !important;
+  background: rgba(93, 156, 236, .7) !important;
+}
+
+.CalendarEvent\/unmonitored\/Zvc-m, /* Sonarr */
+.CalendarEvent-unmonitored-Zvc-m { /* Radarr */
+  border-left-color: rgba(173, 173, 173, .0) !important;
+  background: rgba(173, 173, 173, .7) !important;
+}
+
+.CalendarEvent\/onAir\/dwaU_ { /* Sonarr */
+  border-left-color: rgba(255, 165, 0, .0) !important;
+  background: rgba(255, 165, 0, .7) !important;
+}
+
+.CalendarEvent\/downloading\/1kwSO, /* Sonarr */
+.CalendarEvent-downloading-1kwSO { /* Radarr */
+  border-left-color: rgba(122, 67, 182, .0) !important;
+  background: rgba(122, 67, 182, .7) !important;
+}
+}
