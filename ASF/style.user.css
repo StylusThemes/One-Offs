@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         ASF
-@version      0.0.1
+@version      0.0.2
 @description  .
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -16,5 +16,23 @@
 @-moz-document regexp("https?://.*:/*[[PORT]]*//.*"), regexp("/*[[URL]]*/.*") {
 html {
   font-size: 12px !important;
+}
+
+* {
+  font-weight: lighter !important;
+}
+
+.bot-cards {
+  grid-gap: 0 !important;
+  grid-template-columns: auto !important;
+  padding: 0 !important;
+}
+
+.bot-card__value {
+  color: black !important;
+}
+
+.bot-card__name {
+  color: black !important;
 }
 }
