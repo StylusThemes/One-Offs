@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name         Global Font Changer
-@version      0.0.6
+@version      0.0.7
 @description  Replace font for various things
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
@@ -44,6 +44,12 @@ FontTE "Replace Every Font" <<<EOT
 
 html {
   font-size: 10px !important;
+}
+}
+
+@-moz-document regexp("http(s)?://(www.)?true(steam)?(trophies|achievements).com/.*") {
+.nav-gamer.open {
+  top: 0px !important;
 }
 }
 
