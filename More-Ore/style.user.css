@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name         More-Ore
+@version      0.0.1
+@description  .
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/One-Offs
+@supportURL   https://github.com/StylusThemes/One-Offs/issues
+@updateURL    https://raw.githubusercontent.com/StylusThemes/One-Offs/master/More-Ore/style.user.css
+@license      CC-BY-SA-4.0
+
+@advanced text SCALE "Scale" "5"
+==/UserStyle== */
+
+@-moz-document url-prefix("https://syns.studio/more-ore/") {
+.display-ads-container p {
+  display: none !important;
+}
+
+.weak-spot {
+  transform: scale(/*[[SCALE]]*/) !important;
+  left: -180px !important;
+  bottom: 260px !important;
+}
+
+.boss-fight-container > .manual-attack {
+  width: 50px !important;
+  left: 143px !important;
+  top: 50px !important;
+}
+
+.display-ads-container .adsbygoogle {
+  display: none !important;
+}
+}
