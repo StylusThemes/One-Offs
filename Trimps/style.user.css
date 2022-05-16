@@ -1,0 +1,84 @@
+/* ==UserStyle==
+@name         Trimps
+@version      0.0.1
+@description  .
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/One-Offs
+@supportURL   https://github.com/StylusThemes/One-Offs/issues
+@updateURL    https://raw.githubusercontent.com/StylusThemes/One-Offs/master/Trimps/style.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+@-moz-document domain("trimps.github.io") {
+  .fightBtn:not(#mapsBtn) {
+    padding-top: 0.3em !important;
+  }
+
+  .workBtn {
+    padding-top: 0.3em !important;
+  }
+
+  .workBtn,
+  .fightBtn,
+  #autoMapLabel,
+  .tabSelected a,
+  .tabNotSelected a,
+  #battleSideTitle,
+  #autoMapStatus {
+    font-size: 0.8em !important;
+  }
+
+  #mapsBtnText {
+    margin-top: -0.01em !important;
+  }
+
+  #voidAlert {
+    top: 0 !important;
+    padding: 0.3em 0.55em 0.1em !important;
+  }
+
+  #talentsAlert {
+    padding: 0.4em 0.7em 0.1em !important;
+    min-width: 1em !important;
+    margin-right: 0.2em !important;
+  }
+
+  .titleDiv {
+    font-size: 1.1em !important;
+    padding: 0.1em 0 !important;
+  }
+
+  #empHide,
+  #unempHide {
+    font-size: 0.8em !important;
+  }
+
+  #trappingBar {
+    line-height: 1em;
+  }
+
+  #trappingProgress {
+    margin: 0.1em;
+  }
+
+  #hiderStatus {
+    font-size: 0.6vw !important;
+  }
+
+  #hiderStatus br {
+    display: none !important;
+  }
+
+  #grid,
+  #mapGrid {
+    overflow: hidden;
+  }
+
+  .battleCell {
+    font-size: 0.9vw !important;
+    padding-top: 0.4vw !important;
+    padding-bottom: 0 !important;
+    height: 2vw;
+  }
+}
