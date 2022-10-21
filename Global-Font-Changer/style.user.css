@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         Global Font Changer
-@version      0.0.7
-@description  Replace font for various things
+@version      0.0.8
+@description  Replace the Global Font on your browser
 @namespace    https://github.com/StylusThemes
 @author       StylusThemes <https://github.com/StylusThemes>
 @homepageURL  https://github.com/StylusThemes/One-Offs
@@ -35,26 +35,4 @@ FontTE "Replace Every Font" <<<EOT
 ==/UserStyle== */
 @-moz-document regexp("(https?|chrome)://(?!fonts.google.com)[a-z0-9_].*"), url-prefix("ftp://"), url-prefix("about"), url-prefix("javascript") {
 /*[[FontT]]*/
-}
-
-@-moz-document regexp("http(s)?://(www.)?true(steam)?(trophies|achievements).com/.*"), domain("www.twitch.tv") {
-* {
-  font-size: 12px !important;
-}
-
-html {
-  font-size: 10px !important;
-}
-}
-
-@-moz-document regexp("http(s)?://(www.)?true(steam)?(trophies|achievements).com/.*") {
-.nav-gamer.open {
-  top: 0px !important;
-}
-}
-
-@-moz-document domain("www.twitch.tv") {
-.video-player__container--theatre-whispers {
-  bottom: 0rem;
-}
 }

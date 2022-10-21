@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name         Random Font Fixes
+@version      0.0.1
+@description  Only needed if you are messing with the Font size of the browser.
+@namespace    https://github.com/StylusThemes
+@author       StylusThemes <https://github.com/StylusThemes>
+@homepageURL  https://github.com/StylusThemes/One-Offs
+@supportURL   https://github.com/StylusThemes/One-Offs/issues
+@updateURL    https://raw.githubusercontent.com/StylusThemes/One-Offs/master/Random-Font-Fixes/style.user.css
+@license      CC-BY-SA-4.0
+==/UserStyle== */
+
+@-moz-document regexp("http(s)?://(www.)?true(steam)?(trophies|achievements).com/.*"), domain("www.twitch.tv") {
+* {
+  font-size: 12px !important;
+}
+
+html {
+  font-size: 10px !important;
+}
+}
+
+@-moz-document regexp("http(s)?://(www.)?true(steam)?(trophies|achievements).com/.*") {
+.nav-gamer.open {
+  top: 0px !important;
+}
+}
+
+@-moz-document domain("www.twitch.tv") {
+.video-player__container--theatre-whispers {
+  bottom: 0rem;
+}
+}
