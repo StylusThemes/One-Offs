@@ -1,0 +1,109 @@
+/* Base Status Indicator */
+[role="img"][aria-label]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  border-radius: 0;
+}
+
+/* Friends List Padding */
+.friendsTable-133bsv .friendsRow-2yicud .friendsColumnName-1zBOKm {
+  padding-left: 15px;
+}
+
+/* Avatar Modifications */
+.avatarOffline-3GF27z {
+  filter: grayscale(100%);
+  border-radius: 0;
+}
+
+[role="img"][aria-label],
+.avatarOffline-3GF27z {
+  border-radius: 0;
+}
+
+[role="img"][aria-label] foreignObject,
+.avatarOffline-3GF27z foreignObject {
+  mask: none;
+}
+
+[role="img"][aria-label] foreignObject img,
+.avatarOffline-3GF27z foreignObject img {
+  border-radius: 0;
+}
+
+[role="img"][aria-label] svg rect,
+.avatarOffline-3GF27z svg rect {
+  display: none;
+}
+
+/* Status Borders */
+[role="img"][aria-label*="Online" i]:before {
+  border-right: 4px solid;
+  border-image: linear-gradient(to left, #43b581 3px, black 3px) 4;
+}
+
+[role="img"][aria-label*="Do Not Disturb" i]:before {
+  border-right: 4px solid;
+  border-image: linear-gradient(to left, #f04747 3px, black 3px) 4;
+}
+
+[role="img"][aria-label*="Idle" i]:before {
+  border-right: 4px solid;
+  border-image: linear-gradient(to left, #faa61a 3px, black 3px) 4;
+}
+
+[role="img"][aria-label*="Streaming" i]:before {
+  border-right: 4px solid;
+  border-image: linear-gradient(to left, #6441a5 3px, black 3px) 4;
+}
+
+[role="img"][aria-label*="Offline" i]:before,
+.avatarOffline-3GF27z {
+  border-right: 4px solid;
+  border-image: linear-gradient(to left, #747f8d 3px, black 3px) 4;
+}
+
+[role="img"][aria-label*="Invisible" i]:before {
+  border-right: 4px solid;
+  border-image: linear-gradient(to left, #747f8d 3px, black 3px) 4;
+}
+
+
+/*---------------------------
+   Cursor & Dot Adjustments
+---------------------------*/
+
+.cursorDefault--wfhy5,
+.dots-1BwzZQ {
+  overflow: visible;
+}
+
+.dots-1BwzZQ [cx="2.5"] {
+  cy: -8;
+  cx: -8.5;
+}
+
+.dots-1BwzZQ [cx="8.75"] {
+  cy: -8;
+  cx: -2.25;
+}
+
+.dots-1BwzZQ [cx="15"] {
+  cy: -8;
+  cx: 4;
+}
+
+/* Avatar Wrapper */
+.avatarWrapper-3H_478 {
+  border-radius: 0;
+}
+
+/* Remove Round Mask from foreignObject */
+foreignObject[mask*="round-80"] {
+  mask: none !important;
+}

@@ -1,0 +1,133 @@
+div[class^="jumpToPresentBar"] {
+  right: 16px !important;
+}
+
+/* Lower chat field + put typing indicators on top */
+main[class^="chatContent"] > form[class^="form"] {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+main[class^="chatContent"]
+  > form[class^="form"]:not(:has(div[class^="typing"])) {
+  margin-top: calc(24px + (var(--space-xs) * 2)) !important;
+}
+
+main[class^="chatContent"] > form[class^="form"] div[class^="channelTextArea"] {
+  margin-bottom: var(--space-xs) !important;
+}
+
+div[class^="typing"] {
+  position: static !important;
+  margin-top: var(--space-xs);
+  margin-bottom: var(--space-xs);
+}
+
+div[class^="messagesWrapper"] div[class^="scrollerSpacer"] {
+  display: none !important;
+}
+
+/* Hide pinned guild discover button */
+div[class^="footer_"]:has(div[data-list-item-id="guildsnav___guild-discover-button"]) {
+  display: none;
+}
+
+div[class*="unreadMentionsFixedFooter_"] {
+  bottom: 0;
+}
+
+/* Make profile colors match current theme */
+div[class^="inner_"] {
+  --bg-surface-overlay: var(--background-base-lowest) !important;
+}
+
+/* Revert reactions size change */
+.reaction__23977 .reactionLarge {
+  width: 1rem;
+  height: 1rem;
+}
+
+.largeReactionBtn__23977 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.largeIcon__23977 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.largeReactionBtn__23977.forceShow__23977 {
+  padding: 0.25rem 0.375rem;
+}
+
+.visual-refresh {
+  /* Remove user profile overlap from server list */
+  section.panels_c48ade {
+    margin-left: 64px;
+    width: calc(100% - 72px) !important;
+    bottom: 0;
+    border-radius: 0;
+  }
+
+  nav.wrapper_ef3116.guilds_c48ade {
+    margin-bottom: 0;
+  }
+
+  /*.container__37e49 {
+    background: transparent !important;
+ }*/
+
+  /* Remove exrta tiny overlap */
+  .sidebar_c48ade:after {
+    display: none;
+  }
+
+  /* code block background */
+  .markup__75297 code {
+    background: transparent !important;
+  }
+
+  /* Context Menu Padding*/
+  .labelContainer_c1e9c4,
+  .scroller_c1e9c4 {
+    padding: 6px;
+  }
+
+  .wrapper_f563df {
+    padding: 4px 2px;
+  }
+
+  .separator_c1e9c4 {
+    margin: 2px;
+  }
+
+  /* Channel List Padding */
+  .containerDefault_c69b6d > div > div > a {
+    padding: 2px 6px;
+  }
+
+  /* Window Topbar Size */
+  .bar_c38106 {
+    padding-right: 8px;
+  }
+
+  * {
+    --custom-app-top-bar-height: 28px;
+  }
+
+  .leading_c38106,
+  .trailing_c38106 {
+    gap: 2px;
+  }
+
+  /* New Member Badge Color */
+  .newMemberBadge_f80704 {
+    --text-positive: #4cc06c;
+  }
+
+  /* Channel Name Offset*/
+  .container__9293f {
+    padding-left: 10px;
+  }
+}
