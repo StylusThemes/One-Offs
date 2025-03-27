@@ -35,9 +35,16 @@ svg foreignObject[mask="url(#svg-mask-avatar-default)"] {
 }
 
 /* hide all the masks a profile image can have and also the weird dot */
+[class^="listItem_"] [class^="wrapper_"] > [class^="svg_"] > mask,
+[class^="bannerSVGWrapper_"] > mask > circle,
 svg[class^="bannerSVGWrapper"] mask,
 [class^="avatarHoverTarget"] circle {
   display: none;
+}
+
+[class^="mask_"] > foreignObject,
+[class^="svg_"] > foreignObject {
+  mask-image: none;
 }
 
 div[class^="tooltipPointer"] {
